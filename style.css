@@ -55,7 +55,7 @@ body {
     font-family: "K2D", sans-serif;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
 
     .username {
         position: relative;
@@ -65,13 +65,14 @@ body {
         max-width: 45vh;
         height: auto;
         min-height: 5vh;
-        max-height: 12vh;
+        max-height: 8vh;
         height: 100%;
         color: white;
         font-family: "K2D", sans-serif;
     }
 
-} 
+}
+
 .username h2 {
     padding-left: 1rem;
     padding-top: 0.6rem;
