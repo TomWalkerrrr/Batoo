@@ -1,7 +1,9 @@
 let startY = 0;
 let pulling = false;
 
-window.addEventListener('touchstart', (e) => {
+const squaredown = document.querySelector(".viewmoney");
+
+squaredown.addEventListener('touchstart', (e) => {
     startY = e.touches[0].clientY;
     pulling = false;
 });
@@ -16,5 +18,6 @@ window.addEventListener('touchmove' (e) => {
 window.addEventListener('touchend', () => {
     if(pulling) {
         console.log("Pulling");
+        squaredown.style.backgroundColor="red";
     }
 })
