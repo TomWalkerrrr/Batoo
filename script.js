@@ -25,14 +25,16 @@ squaredown.addEventListener('touchstart', (e) => {
 });
 
 squaredown.addEventListener('touchmove', (e) => {
-  if (!isDragging) return;
-  const currentY = e.touches[0].clientY;
-  let deltaY = currentY - startY;
-  if (deltaY < 0) deltaY = 0;
-  if (deltaY > maxTranslate) deltaY = maxTranslate;
-  squaredown.style.transform = `translateY(${deltaY}px)`;
-  applyDraggingStyle(deltaY);
-});
+    if (!isDragging) return;
+    e.preventDefault(); // Empêche le scroll natif pendant le drag
+    const currentY = e.touches[0].clientY;
+    let deltaY = currentY - startY;
+    if (deltaY < 0) deltaY = 0;
+    if (deltaY > maxTranslate) deltaY = maxTranslate;
+    squaredown.style.transform = `translateY(${deltaY}px)`;
+    applyDraggingStyle(deltaY);
+  }, { passive: false }); // Ajoute passive: false pour autoriser preventDefault
+  
 
 squaredown.addEventListener('touchend', () => {
   isDragging = false;
