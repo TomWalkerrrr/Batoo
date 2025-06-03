@@ -12,6 +12,7 @@ window.addEventListener('touchmove', (e) => {
     const currentY = e.touches[0].clientY;
     if (currentY - startY > 50) {
         pulling = true;
+        squaredown.style.backgroundColor="red";
     }
 })
 
