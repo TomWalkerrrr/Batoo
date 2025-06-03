@@ -8,7 +8,7 @@ squaredown.addEventListener('touchstart', (e) => {
     pulling = false;
 });
 
-window.addEventListener('touchmove', (e) => {
+squaredown.addEventListener('touchmove', (e) => {
     const currentY = e.touches[0].clientY;
     if (currentY - startY > 50) {
         pulling = true;
@@ -16,7 +16,7 @@ window.addEventListener('touchmove', (e) => {
     }
 })
 
-window.addEventListener('touchend', () => {
+squaredown.addEventListener('touchend', () => {
     if(pulling) {
         console.log("Pulling");
         squaredown.style.backgroundColor="white";
