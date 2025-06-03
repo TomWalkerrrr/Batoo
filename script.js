@@ -19,6 +19,6 @@ window.addEventListener('touchmove', (e) => {
 window.addEventListener('touchend', () => {
     if(pulling) {
         console.log("Pulling");
-        squaredown.style.backgroundColor="red";
+        squaredown.style.backgroundColor="white";
     }
 })
