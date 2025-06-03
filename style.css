@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap');
+
+body[data-page="home"] {
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.bluetop {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    background-color: #4EC3D0;
+    align-items: center;
+    justify-content: center;
+}
+
+.bluetop h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    margin: 1rem;
+    font-family: "k2d-regular", sans-serif;
+    color: white;
+}
+
+.username {
+    position: relative;
+    display: flex;
+    background-color: #D9D9D9;
+    min-width: 45vw;
+    max-width: 45vh;
+    height: auto;
+    max-height: 15vh;
+    height: 100%;
+    color: white;
+    font-family: "K2D", sans-serif;
+}
+
+.username h2 {
+    padding-left: 1rem;
+    padding-top: 0.6rem;
+    text-align: center;
+    padding-right: 1rem;
+}
+
+.username img {
+    background-color: #EADDFF;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    height: 43vh;
+}
+
+.viewmoney {
+    display: flex;
+    position: relative;
+    background-color: rgb(158, 158, 158);
+    border-radius: 100%;
+    width: 35vw;
+    min-width: 90px;
+    min-height: 90px;
+    height: 35vw;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(5vh);
+    font-family: "K2D", sans-serif;
+}
+
+.moneyview {
+    display: flex;
+    position: relative;
+    background-color: #4EC3D0;
+    border-radius: 100%;
+    width: 32vw;
+    height: 32vw;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    min-height: 80px;
+    margin-left: -1rem;
+    color: white;
+}
+
+#downarraw {
+    flex-direction: column;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "K2D", sans-serif;
+    align-items: end;
+    padding: 0;
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #4EC3D0;
+    /* transform: translateY(-7vh); */
+}
