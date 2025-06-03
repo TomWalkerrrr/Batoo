@@ -57,6 +57,21 @@ main {
     height: 43vh;
 }
 
+.bubble {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4EC3D0;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
 .viewmoney {
     display: flex;
     position: relative;
@@ -69,6 +84,7 @@ main {
     align-items: center;
     justify-content: center;
     transform: translateY(5vh);
+    transition: 0.3s ease;
     font-family: "K2D", sans-serif;
 }
 
